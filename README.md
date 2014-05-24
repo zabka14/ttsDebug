@@ -1,7 +1,8 @@
 Island Life TTS Debugging mission 
 ========
 
-
+ChangeLog
+========
 #############################################################
 
 --------------------------CHANGELOG--------------------------
@@ -9,13 +10,13 @@ Island Life TTS Debugging mission
 #############################################################
 
 
-****************************V2*****************************
+****************************V1.2*****************************
 
 -------------------------24/05/2014--------------------------
 
 -Correction du bug qui affichait 3 permis (licencearray.sqf)
 
--Correction de la banque:
+-Correction de la banque (bankrob.sqf)
 
 -Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
 
@@ -28,3 +29,5 @@ Island Life TTS Debugging mission
 -Récupération du mod initial
 
 
+To Do
+========
