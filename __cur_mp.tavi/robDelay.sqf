@@ -1,2 +1,3 @@
-sleep 300;
+sleep 120;
 robenable = true;
+Safecracked1 = false;
