@@ -35,6 +35,6 @@ To Do
 
 - [x] Corriger braquage banque.
 - [x] Corriger bug des permis voiture multiples.
-- [ ] Ajouter la possibilité aux hauts gradés de la poilice d'arreter les autres policiers.
+- [ ] Ajouter la possibilité aux hauts gradés de la police d'arrêter les autres policiers.
 - [ ] Bug banque policiers.
 - [ ] Bug des actions de police (arrestation, amandes, ...).
