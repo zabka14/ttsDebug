@@ -1,5 +1,30 @@
 Island Life TTS Debugging mission 
 ========
 
-Debuging of scripts for TTS Island Life server, contain all the missions files since last update by devs.
-We're working on it evryday, so don't forget to 
+
+#############################################################
+
+--------------------------CHANGELOG--------------------------
+
+#############################################################
+
+
+****************************V2*****************************
+
+-------------------------24/05/2014--------------------------
+
+-Correction du bug qui affichait 3 permis (licencearray.sqf)
+
+-Correction de la banque:
+
+-Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
+
+
+
+***************************V1******************************
+
+-------------------------23/05/2014--------------------------
+
+-Récupération du mod initial
+
+
