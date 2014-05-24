@@ -1,3 +1,3 @@
-sleep 120;
+sleep 3600;
 robenable = true;
 Safecracked1 = false;
