@@ -19,6 +19,7 @@ ChangeLog
 -Correction de la banque (bankrob.sqf) :
 
   -Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
+  
   -Ajout d'un delai avant de braquer la banque une nouvelle fois
 
 
