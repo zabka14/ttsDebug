@@ -16,10 +16,10 @@ ChangeLog
 
 -Correction du bug qui affichait 3 permis (licencearray.sqf)
 
--Correction de la banque (bankrob.sqf)
+-Correction de la banque (bankrob.sqf) :
 
--Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
-
+  -Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
+  -Ajout d'un delai avant de braquer la banque une nouvelle fois
 
 
 ***************************V1******************************
@@ -31,3 +31,9 @@ ChangeLog
 
 To Do
 ========
+
+- [x] Corriger braquage banque.
+- [x] Corriger bug des permis voiture multiples.
+- [ ] Ajouter la possibilité aux hauts gradés de la poilice d'arreter les autres policiers.
+- [ ] Bug banque policiers.
+- [ ] Bug des actions de police (arrestation, amandes, ...).
