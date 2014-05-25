@@ -51,3 +51,4 @@ To Do
 - [ ] Ajouter un timer pour la déco (éviter les déco sauvages)
 - [ ] Modifier le master-array pour supprimer certains objets trop utilisés (vers donateur shop)
 - [ ] Modifier pompier
+- [ ] Modifier le prix de reventes des objets pompiers et Ferry (revente à volontée)
