@@ -1,4 +1,0 @@
-GearAdd = (vehicle player);
-player addweapon "STINGER";
-		player addMagazine "M_Stinger_AA";
-		player addMagazine "M_Stinger_AA";
