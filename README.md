@@ -47,8 +47,10 @@ To Do
 - [ ] Bug banque policiers.
 - [ ] Bug des actions de police (arrestation, amandes, ...).
 - [ ] Bug hélicoptère fourrière.
-- [ ] Modifier limitation argent des player de 999.999 vers 9.999.999
-- [ ] Ajouter un timer pour la déco (éviter les déco sauvages)
-- [ ] Modifier le master-array pour supprimer certains objets trop utilisés (vers donateur shop)
-- [ ] Modifier pompier
-- [ ] Modifier le prix de reventes des objets pompiers et Ferry (revente à volontée)
+- [ ] Modifier limitation argent des player de 999.999 vers 9.999.999.
+- [ ] Ajouter un timer pour la déco (éviter les déco sauvages).
+- [ ] Modifier le master-array pour supprimer certains objets trop utilisés (vers donateur shop).
+- [ ] Modifier pompier.
+- [ ] Modifier le prix de reventes des objets pompiers et Ferry (revente à volontée).
+- [ ] Remettre le mission.sqf de l'ancien mod.
+- [ ] Séparer whitelist.
