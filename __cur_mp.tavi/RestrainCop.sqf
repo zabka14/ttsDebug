@@ -45,5 +45,3 @@ if (player distance _coparrest <=5) then
 };
 
 };
-
-

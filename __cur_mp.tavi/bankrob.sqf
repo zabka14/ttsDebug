@@ -100,11 +100,13 @@ server globalchat format["Le voleur à dérobé $%1!", _robpool];
 
 sleep 4;
 
-_percentlost = _robpool/2000000;
+//_percentlost = _robpool/2000000;
 
-if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
+//if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
 
-_verlust = round(Kontostand*_percentlost); 
+_percentlost = Maxbankrobpercentlost;
+
+_verlust = round(Kontostand*_percentlost);
 			
 if ((Kontostand <= _verlust) and (Kontostand >= 1) and (('bankversicherung' call INV_GetItemAmount) == 0)) then 
 
