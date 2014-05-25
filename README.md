@@ -43,7 +43,7 @@ To Do
 - [x] Corriger braquage banque.
 - [x] Corriger bug des permis voiture multiples.
 - [ ] Bug banque policiers.
-- [ ] Bug des actions de police (arrestation, amandes, ...).
+- [x] Bug des actions de police (arrestation, amandes, ...).
 - [ ] Bug hélicoptère fourrière.
 - [ ] Modifier limitation argent des player de 999.999 vers 9.999.999.
 - [ ] Ajouter un timer pour la déco (éviter les décos sauvages).
