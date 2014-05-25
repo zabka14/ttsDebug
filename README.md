@@ -9,6 +9,15 @@ ChangeLog
 
 #############################################################
 
+****************************V2.0a*****************************
+
+-------------------------25/05/2014--------------------------
+
+-Départ sur une base plus propre (celle d'avant MaJ)
+
+-Reprise de tout les correctifs ajouter jusque ici
+
+
 
 ****************************V1.2*****************************
 
@@ -38,3 +47,7 @@ To Do
 - [ ] Bug banque policiers.
 - [ ] Bug des actions de police (arrestation, amandes, ...).
 - [ ] Bug hélicoptère fourrière.
+- [ ] Modifier limitation argent des player de 999.999 vers 9.999.999
+- [ ] Ajouter un timer pour la déco (éviter les déco sauvages)
+- [ ] Modifier le master-array pour supprimer certains objets trop utilisés (vers donateur shop)
+- [ ] Modifier pompier
