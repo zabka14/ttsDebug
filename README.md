@@ -9,17 +9,16 @@ ChangeLog
 
 #############################################################
 
-****************************V2.0a*****************************
+****************************V1.0*****************************
 
 -------------------------25/05/2014--------------------------
 
 -Départ sur une base plus propre (celle d'avant MaJ)
 
--Reprise de tout les correctifs ajouter jusque ici
+-Reprise de tout les correctifs ajoutés jusque ici
 
 
-
-****************************V1.2*****************************
+**********************Ancien Mod V1.0************************
 
 -------------------------24/05/2014--------------------------
 
@@ -27,10 +26,9 @@ ChangeLog
 
 -Correction de la banque (bankrob.sqf) :
 
-  -Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
+	-Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
   
-  -Ajout d'un delai avant de braquer la banque une nouvelle fois
-
+	-Ajout d'un delai avant de braquer la banque une nouvelle fois
 
 ***************************V1******************************
 
@@ -48,7 +46,7 @@ To Do
 - [ ] Bug des actions de police (arrestation, amandes, ...).
 - [ ] Bug hélicoptère fourrière.
 - [ ] Modifier limitation argent des player de 999.999 vers 9.999.999.
-- [ ] Ajouter un timer pour la déco (éviter les déco sauvages).
+- [ ] Ajouter un timer pour la déco (éviter les décos sauvages).
 - [ ] Modifier le master-array pour supprimer certains objets trop utilisés (vers donateur shop).
 - [ ] Modifier pompier.
 - [ ] Modifier le prix de reventes des objets pompiers et Ferry (revente à volontée).
