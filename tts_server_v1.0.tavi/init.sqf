@@ -34,6 +34,10 @@ execVM "saveVars.sqf";
 execVM "BTK\Cargo Drop\Start.sqf";
 execVM "motd.sqf";
 execVM "antibs.sqf";
+
+//Ajout delai entre 2 braquages
+execVM "robpool.sqf";
+
 //execVM "admintools\Activate.sqf";
 //execVM "admintools\loop.sqf"; 
 //[SkipTimeDay, SkipTimeNight, 1] execVM "skiptime.sqf"; 

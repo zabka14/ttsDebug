@@ -5,16 +5,16 @@ _safedoor = _this select 2;
 
 if (_art == "ausrauben") then 
 
-{	
+{
 
 call compile format["local_cash = robpool%1", _safe];
 
 if(local_cash < 0)exitwith{player groupchat "ce coffre-fort a été récemment volé et est vide"};
 
-if(!robenable)exitwith{player groupchat "Vous avez déjà branquer la banque"};
+if(!robenable)exitwith{player groupchat "Vous avez déjà branqué la banque"};
 if(!(call INV_isArmed) and !debug)exitWith{player groupChat localize "STRS_bank_rob_noweapon";};
 robenable = false;
-call compile format["robpool%1 = 0;publicvariable ""robpool%1"";", _safe];											
+call compile format["robpool%1 = 0;publicvariable ""robpool%1"";", _safe];
 player groupChat format[localize "STRS_bank_rob_info", (robb_money call ISSE_str_IntToStr)];
 
 format['[0,1,2,["opfer", %1, %2]] execVM "bankrob.sqf";', _safe, local_cash] call broadcast;
@@ -63,7 +63,11 @@ if (alive player) then
 stolencash = stolencash + local_cash;
 
 local_useBankPossible = false;
-robenable = true;
+
+//Ajout delai
+execVM "robDelay.sqf";
+
+
 rblock = rblock + ((local_cash/50000)*60);
 _rblock = rblock;
 
@@ -97,11 +101,16 @@ sleep 8;
 ["Bank", "civilian", _robpool] spawn Isse_AddCrimeLogEntry;
 server globalchat format["The thief stole $%1!", _robpool];
 
+//Ajout delai
+execVM "robDelay.sqf";
+
 sleep 4;
 
 _percentlost = _robpool/2000000;
 
-if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
+//if(_percentlost > Maxbankrobpercentlost)then{_percentlost == Maxbankrobpercentlost};
+
+_percentlost = Maxbankrobpercentlost;
 
 _verlust = round(Kontostand*_percentlost); 
 			
