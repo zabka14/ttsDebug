@@ -3,8 +3,8 @@
 ::Nom du fichier serveur
 Set serveur=ARMA2OASERVER.exe
 
-::Temps entre chaque test (en secondes)
-Set interval=30
+::Temps entre chaque test (en secondes) par defaut 10min
+Set interval=600
 
 ::Debut d'un boucle infinie
 :start
