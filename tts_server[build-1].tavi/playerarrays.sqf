@@ -67,7 +67,7 @@ patrolwhitelist    = [cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop13
  //Slots
 copadminslots	   = [cop1,cop2];
 
-adminallowedarray  = ["143317702","248081990"];["whitelist", "adminallowedarray", "position"] call iniDB_read;
+adminallowedarray  = ["143317702","248081990"];
 
 
 specialofficerarray  = ["0"];
