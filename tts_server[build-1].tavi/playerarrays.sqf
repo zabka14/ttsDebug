@@ -41,34 +41,44 @@
 //Commissaire : Brooks Crowford : 99740806
 //----------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
 waitUntil {((alive player) or (local server))};
 
 if(local server and !local player)then{dedicatedServer = true};	
 if(local server and local player)then{hostedServer = true};
 
-playerstringarray = ["Civ1","Civ2","Civ3","Civ4","Civ5","Civ6","Civ7","Civ8","Civ9","Civ10","Civ11","Civ12","Civ13","Civ14","Civ15","Civ16","Civ17","Civ18","Civ19","Civ20","Civ21","Civ22","Civ23","Civ24","Civ25","Civ26","Civ27","Civ28","Civ29","Civ30","civ31","civ32","civ33","civ34","civ35","civ36","civ37","civ38","civ39","civ40","civ41","civ42","civ43","civ44","civ45","civ46","civ47","civ48","civ49","civ50","civ51","civ52","civ53","civ54","civ55","civ56","civ57","civ58","civ59","civ60","civ61","civ62","civ63","civ64","cop1","cop2","cop3","cop5","cop6","cop7","cop8","cop9","cop10","cop11","cop12","cop14","cop15","cop17","cop18","cop19","cop20","cop20A","cop21","cop22","cop22A","cop23","cop24","cop25","cop26","cop27","cop28","cop29","cop30"];
+playerstringarray = ["Civ1","Civ2","Civ3","Civ4","Civ5","Civ6","Civ7","Civ8","Civ9","Civ10","Civ11","Civ12","Civ13","Civ14","Civ15","Civ16","Civ17","Civ18","Civ19","Civ20","Civ21","Civ22","Civ23","Civ24","Civ25","Civ26","Civ27","Civ28","Civ29","Civ30","civ31","civ32","civ33","civ34","civ35","civ36","civ37","civ38","civ39","civ40","civ41","civ42","civ43","civ44","civ45","civ46","civ47","cop1","cop2","cop3","cop5","cop6","cop7","cop8","cop9","cop10","cop11","cop12","cop14","cop15","cop17","cop18","cop19","cop20","cop20A","cop21","cop22","cop22A","cop23","cop24","cop25","cop26","cop27","cop28"];
 
 for [{_i=0}, {_i < (count playerstringarray)}, {_i=_i+1}] do {if (isNil (playerstringarray select _i)) then { call compile format["%1 = objNull;", (playerstringarray select _i)]; }; };
 
-playerarray = [civ1,civ2,civ3,civ4,civ5,civ6,civ7,civ8,civ9,civ10,civ11,civ12,civ13,civ14,civ15,civ16,civ17,civ18,civ19,civ20,civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34,civ35,civ36,civ37,civ38,civ39,civ40,civ41,civ42,civ43,civ44,civ45,civ46,civ47,civ48,civ49,civ50,civ51,civ52,civ53,civ54,civ55,civ56,civ57,civ58,civ59,civ60,civ61,civ62,civ63,civ64,cop1,cop2,cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop13,cop14,cop15,cop16,cop17,cop18,cop19,cop20,cop21,cop22,cop23,cop24,cop25,cop26,cop27,cop28,cop29,cop30];
-civstringarray = ["Civ1","Civ2","Civ3","Civ4","Civ5","Civ6","Civ7","Civ8","Civ9","Civ10","Civ11","Civ12","Civ13","Civ14","Civ15","Civ16","Civ17","Civ18","Civ19","Civ20","Civ21","Civ22","Civ23","Civ24","Civ25","Civ26","Civ27","Civ28","Civ29","Civ30","civ31","civ32","civ33","civ34","civ35","civ36","civ37","civ38","civ39","civ40","civ41","civ42","civ43","civ44","civ45","civ46","civ47","civ48","civ49","civ50","civ51","civ52","civ53","civ54","civ55","civ56","civ57","civ58","civ59","civ60","civ61","civ62","civ63","civ64"];
-civarray = [civ1,civ2,civ3,civ4,civ5,civ6,civ7,civ8,civ9,civ10,civ11,civ12,civ13,civ14,civ15,civ16,civ17,civ18,civ19,civ20,civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34,civ35,civ36,civ37,civ38,civ39,civ40,civ41,civ42,civ43,civ44,civ45,civ46,civ47,civ48,civ49,civ50,civ51,civ52,civ53,civ54,civ55,civ56,civ57,civ58,civ59,civ60,civ61,civ62,civ63,civ64];
-copstringarray = ["cop1","cop2","cop3","cop4","cop5","cop6","cop7","cop8","cop9","cop10","cop11","cop12","cop14","cop15","cop17","cop18","cop19","cop20","cop20A","cop21","cop22","cop22A","cop23","cop24","cop25","cop26","cop27","cop28","cop29","cop30"];
+playerarray = [civ1,civ2,civ3,civ4,civ5,civ6,civ7,civ8,civ9,civ10,civ11,civ12,civ13,civ14,civ15,civ16,civ17,civ18,civ19,civ20,civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34,civ35,civ36,civ37,civ38,civ39,civ40,civ41,civ42,civ43,civ44,civ45,civ46,civ47,cop1,cop2,cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop13,cop14,cop15,cop16,cop17,cop18,cop19,cop20,cop21,cop22];
+civstringarray    = ["Civ1","Civ2","Civ3","Civ4","Civ5","Civ6","Civ7","Civ8","Civ9","Civ10","Civ11","Civ12","Civ13","Civ14","Civ15","Civ16","Civ17","Civ18","Civ19","Civ20","Civ21","Civ22","Civ23","Civ24","Civ25","Civ26","Civ27","Civ28","Civ29","Civ30","civ31","civ32","civ33","civ34","civ35","civ36","civ37","civ38","civ39","civ40","civ41","civ42","civ43","civ44","civ45","civ46","civ47"];
+civarray          = [civ1,civ2,civ3,civ4,civ5,civ6,civ7,civ8,civ9,civ10,civ11,civ12,civ13,civ14,civ15,civ16,civ17,civ18,civ19,civ20,civ21,civ22,civ23,civ24,civ25,civ26,civ27,civ28,civ29,civ30,civ31,civ32,civ33,civ34,civ35,civ36,civ37,civ38,civ39,civ40,civ41,civ42,civ43,civ44,civ45,civ46,civ47];
+copstringarray    = ["cop1","cop2","cop3","cop4","cop5","cop6","cop7","cop8","cop9","cop10","cop11","cop12","cop13","cop14","cop15","cop17","cop18","cop19","cop20","cop20A","cop21","cop22","cop22A","cop23","cop24","cop25","cop26","cop27","cop28"];
 //THE ARRAY OF ALL THE COPS
-coparray = [cop1,cop2,cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop14,cop15,cop17,cop18,cop19,cop20,cop20A,cop21,cop22,cop22A,cop23,cop24,cop25,cop26,cop27,cop28,cop29,cop30];
+coparray           = [cop1,cop2,cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop13,cop14,cop15,cop16,cop17,cop18,cop19,cop20,cop20A,cop21,cop22,cop22A,cop23,cop24,cop25,cop26,cop27,cop28];
 
 //PATROL Officer Slots
-patrolwhitelist = [cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop14,cop15,cop17,cop18,cop19,cop20,cop20A,cop21,cop22,cop22A,cop23,cop24,cop25,cop26,cop27,cop28,cop29,cop30];
+patrolwhitelist    = [cop3,cop4,cop5,cop6,cop7,cop8,cop9,cop10,cop11,cop12,cop13,cop14,cop15,cop16,cop17,cop18,cop19,cop20,cop20A,cop21,cop22,cop22A,cop23,cop24,cop25,cop26,cop27,cop28];
 
-//Slots
-copadminslots = [cop1,cop2];
-adminallowedarray  = ["143317702","248081990"];
+ //Slots
+copadminslots	   = [cop1,cop2];
 
-specialofficerarray = ["0"];
+adminallowedarray  = ["10829888","10829056","238135558","99740806","198412550"];
 
-swatallowedarray = ["0"];
 
-patrolallowedarray = ["143317702","248081990"];
+specialofficerarray  = ["0"];
+
+swatallowedarray   = ["0"];
+
+
+patrolallowedarray = ["90195718","104153990","81613638","35436294","240215622","153133590","106854726","4947214","244537094","248081990","143317702","83620614","139678662","247762822","243940614","","83684486","248272006","40585798","91680710","159501894","169146310","3030022","107677446","123624838","139994246","159965766","198412550","99740806","245427910","49470214"];
+
+
+
 
 rolenumber = 0; 
 
@@ -141,13 +151,13 @@ if (typeName player == "OBJECT") then {
 	{
 		if !(_uid in adminallowedarray) then
 		{
-			player groupChat "Tu es pas whitelist!";
+			player groupChat "This slot is reserved for Trium Administrators! You will be kicked back to lobby in 10 seconds!";
 			sleep 10;
 			failMission "END1";
 		}
 		else
 		{
-			player groupChat "Tu es connecte en policier!"
+			player groupChat "You have logged in as a Trium Administrator."
 		};
 	};
 } foreach copadminslots;
@@ -158,13 +168,13 @@ if (typeName player == "OBJECT") then {
 	{
 		if !(_uid in patrolallowedarray) then
 		{
-			player groupChat "Tu es pas whitelist!";
+			player groupChat "This slot is reserved for trained Trium Officers! You will be kicked back to lobby in 10 seconds!";
 			sleep 10;
 			failMission "END1";
 		}
 		else
 		{
-			player groupChat "Tu es connecte en policier!"
+			player groupChat "You have logged in as a trained Trium Officer."
 		};
 	};
 } foreach patrolwhitelist;
@@ -174,13 +184,13 @@ if (typeName player == "OBJECT") then {
 	{
 		if !(_uid in swatallowedarray) then
 		{
-			player groupChat "Tu es pas whitelist!";
+			player groupChat "This slot is reserved for trained Trium Officers! You will be kicked back to lobby in 10 seconds!";
 			sleep 10;
 			failMission "END1";
 		}
 		else
 		{
-			player groupChat "Tu es connecte en policer!"
+			player groupChat "You have logged in as a trained Trium Officer."
 		};
 	};
 } foreach swatmemberarray;
@@ -190,13 +200,13 @@ if (typeName player == "OBJECT") then {
 	{
 		if !(_uid in specialofficerallowed) then
 		{
-			player groupChat "Tu es pas whitelist!";
+			player groupChat "This slot is reserved for trained Trium Officers! You will be kicked back to lobby in 10 seconds!";
 			sleep 10;
 			failMission "END1";
 		}
 		else
 		{
-			player groupChat "Tu es connecte en policer!"
+			player groupChat "You have logged in as a trained Trium Officer."
 		};
 	};
 }
