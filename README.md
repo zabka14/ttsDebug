@@ -52,3 +52,5 @@ To Do
 - [ ] Modifier le prix de reventes des objets pompiers et Ferry (revente à volontée).
 - [ ] Remettre le mission.sqf de l'ancien mod.
 - [ ] Séparer whitelist.
+- [ ] Enlever les upgrades pour les bateaux.
+- [ ] Passer de inidb à inidbi.
