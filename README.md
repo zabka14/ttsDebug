@@ -54,3 +54,4 @@ To Do
 - [ ] Séparer whitelist.
 - [ ] Enlever les upgrades pour les bateaux.
 - [ ] Passer de inidb à inidbi.
+- [ ] Ajouter une whitelist pour les donateurs.
