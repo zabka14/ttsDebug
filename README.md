@@ -3,11 +3,6 @@ Island Life TTS Debugging mission
 
 ChangeLog
 ========
-***
-
---------------------------CHANGELOG--------------------------
-
-***
 
 ### Build-1 | 25/05/2014
 
