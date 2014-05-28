@@ -3,25 +3,20 @@ Island Life TTS Debugging mission
 
 ChangeLog
 ========
-#############################################################
+***
 
 --------------------------CHANGELOG--------------------------
 
-#############################################################
+***
 
-**************************Build-1****************************
-
--------------------------25/05/2014--------------------------
+### Build-1 | 25/05/2014
 
 -Départ sur une base plus propre (celle d'avant MaJ)
 
 -Reprise de tout les correctifs ajoutés jusque ici
 
-
-**********************Ancien Mod V1.0************************
-
--------------------------24/05/2014--------------------------
-
+***
+### Ancien Mod V1.0 | 24/05/2014
 -Correction du bug qui affichait 3 permis (licencearray.sqf)
 
 -Correction de la banque (bankrob.sqf) :
@@ -29,14 +24,16 @@ ChangeLog
 	-Ajout de l'exécution de "robpool.sqf" au démarrage (init.sqf)
   
 	-Ajout d'un delai avant de braquer la banque une nouvelle fois
-
-***************************V1******************************
-
--------------------------23/05/2014--------------------------
+	
+***
+### V1 | 23/05/2014
 
 -Récupération du mod initial
 
 
+
+
+***
 To Do
 ========
 
